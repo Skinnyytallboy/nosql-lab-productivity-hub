@@ -69,7 +69,7 @@ const updateTask = async (req, res) => {
     }
     if (tags !== undefined) update.tags = [].concat(tags).map(String);
 
-    const task = await Task.findByIdAndUpdate(req.params.id, update, {
+    const task = await Task.findByIdAndUpdate(req.params.id, { $set: update }, {
       new: true,
       runValidators: true,
     });
