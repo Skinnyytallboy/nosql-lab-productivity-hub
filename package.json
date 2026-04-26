@@ -1,0 +1,30 @@
+{
+  "name": "nosql-lab-productivity-hub",
+  "version": "1.0.0",
+  "description": "A productivity hub for NoSQL lab exercises using MongoDB",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --testEnvironment node --forceExit"
+  },
+  "keywords": [
+    "nosql",
+    "mongodb",
+    "lab",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.4.1",
+    "mongoose": "^8.3.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}
